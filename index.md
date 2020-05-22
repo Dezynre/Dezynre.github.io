@@ -98,11 +98,7 @@ p{
 	</footer>
 	<script>
  
-
-let button=document.querySelector("#btn");
-
-button.addEventListener("click", ()=>{
-		let condition=document.querySelector("#condition");
+let condition=document.querySelector("#condition");
 		let humidity=document.querySelector("#humidity");
 		let temperature=document.querySelector("#temperature");
 		fetch("http://api.openweathermap.org/data/2.5/weather?lat=-1.2833&lon=36.8167&APPID=05dec21edd849f280c3d7382a4fbfe82").then(function(res){
@@ -119,7 +115,6 @@ button.addEventListener("click", ()=>{
 		}).catch(function(err){
 			console.log(`Error:\t${err.message}`);
 		});
-});
 
  </script>
 
